@@ -80,9 +80,6 @@ save_and_open_image(f"inflation-{end_date_str}.png")
 
 ################### Economy ###################
 
-# Set your FRED API key here (register at https://fred.stlouisfed.org/)
-#os.environ["FRED_API_KEY"] = "83526707a4ce7b3549da2af5660b6fe7"
-
 # Fetch data from FRED
 sp500 = web.DataReader('SP500', 'fred', start_date, end_date)
 cl1 = web.DataReader('DCOILWTICO', 'fred', start_date, end_date)  # WTI Crude Oil Price
